@@ -1,8 +1,6 @@
 package com.jazzkuh.modulemanager.velocity;
 
-import com.jazzkuh.commandlib.velocity.AnnotationCommand;
 import com.jazzkuh.modulemanager.common.ModuleManager;
-import com.jazzkuh.modulemanager.velocity.handlers.commands.CommandComponentHandler;
 import com.jazzkuh.modulemanager.velocity.handlers.listeners.AbstractListener;
 import com.jazzkuh.modulemanager.velocity.handlers.listeners.ListenerComponentHandler;
 import com.jazzkuh.modulemanager.velocity.handlers.tasks.TaskComponentHandler;
@@ -20,9 +18,5 @@ public final class VelocityModuleManager<P extends IVelocityPlugin> extends Modu
 
         getComponentRegistry().registerComponentHandler(AbstractListener.class, new ListenerComponentHandler());
         getComponentRegistry().registerComponentHandler(Runnable.class, new TaskComponentHandler());
-
-        try {
-            getComponentRegistry().registerComponentHandler(AnnotationCommand.class, new CommandComponentHandler());
-        } catch (Exception ignored) {}
     }
 }

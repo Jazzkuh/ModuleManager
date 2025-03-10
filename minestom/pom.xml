@@ -40,12 +40,5 @@
             <version>${minestom.version}</version>
             <scope>provided</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.github.Jazzkuh.CommandLibrary</groupId>
-            <artifactId>minestom</artifactId>
-            <version>cdacd53e13</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 </project>

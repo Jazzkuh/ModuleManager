@@ -38,12 +38,5 @@
             <version>5.0.1</version>
             <scope>compile</scope>
         </dependency>
-
-        <dependency>
-            <groupId>com.github.Jazzkuh.CommandLibrary</groupId>
-            <artifactId>jda</artifactId>
-            <version>cdacd53e13</version>
-            <scope>provided</scope>
-        </dependency>
     </dependencies>
 </project>
