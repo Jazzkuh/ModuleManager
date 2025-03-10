@@ -59,7 +59,7 @@ public abstract class AbstractModule<M extends ModuleManager> {
         if (!registry.isClassRegistered(component.getClass()))
             throw new IllegalArgumentException("Component class is not registered in the registry");
 
-        getLogger().info("Registering component: " + component.getClass().getSimpleName());
+        if (owningManager.isDebug()) getLogger().info("Registering component: " + component.getClass().getSimpleName());
         components.add(component);
     }
 

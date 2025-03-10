@@ -4,6 +4,7 @@ import lombok.Getter;
 import com.jazzkuh.modulemanager.common.loader.ModuleFinder;
 import com.jazzkuh.modulemanager.common.modules.AbstractModule;
 import com.jazzkuh.modulemanager.common.modules.components.ComponentRegistry;
+import lombok.Setter;
 import org.slf4j.Logger;
 
 import java.util.Collections;
@@ -24,6 +25,9 @@ public class ModuleManager {
     private final Logger logger;
     private State state;
 
+    @Setter
+    private boolean debug;
+
     @Getter protected ComponentRegistry componentRegistry;
 
     private final Map<Class<? extends AbstractModule<?>>, AbstractModule<?>> modules;
@@ -33,6 +37,7 @@ public class ModuleManager {
         this.state = State.IDLE;
         this.modules = new LinkedHashMap<>();
         this.componentRegistry = new ComponentRegistry(this);
+        this.debug = true;
     }
 
     public void prepare(AbstractModule<?> module) {

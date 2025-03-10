@@ -16,7 +16,7 @@
         <maven.compiler.target>21</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-        <minestom.version>12794d4263</minestom.version>
+        <minestom.version>ccea53ac44</minestom.version>
     </properties>
 
     <repositories>
