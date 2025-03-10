@@ -1,6 +1,5 @@
 package com.jazzkuh.modulemanager.minestom;
 
-import com.jazzkuh.commandlib.minestom.AnnotationCommand;
 import com.jazzkuh.modulemanager.common.ModuleManager;
 import com.jazzkuh.modulemanager.common.tasks.ISteppingTask;
 import com.jazzkuh.modulemanager.minestom.handlers.listeners.Listener;
